@@ -1,0 +1,38 @@
+{
+  "name": "genpark-distributed-mobile-kitchen-order-dispatch-routing-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - On-demand mobile kitchen restaurant dispatch and curbside dynamic meal preparation routing engine.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "mobile-kitchen",
+    "on-demand-dining",
+    "food-dispatch",
+    "freshness-tracking",
+    "wonder"
+  ],
+  "inputs": {
+    "customer_location": {
+      "type": "string"
+    },
+    "menu_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "dispatch_id": {
+      "type": "string"
+    },
+    "mobile_kitchen_unit": {
+      "type": "string"
+    },
+    "curbside_cook_to_door_mins": {
+      "type": "number"
+    },
+    "food_freshness_temperature_celsius": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
